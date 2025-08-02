@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start":"node main.js"
+    "start": "node main.js",
+    "dev":"nodemon main.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/orewagaurav/Express.js#readme",
   "dependencies": {
+    "dotenv": "^17.2.1",
     "express": "^5.1.0"
   }
 }
