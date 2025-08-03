@@ -5,10 +5,7 @@ dotenv.config(); //loads environment variables from .env file into process.env
 const port = process.env.PORT || 4000;
 console.log("PORT from env:", process.env.PORT);
 
-app.get("/", (req, res) => {
-  res.send("Hello Gaurav");
-});
-app.get("/jokes", (req, res) => {
+app.get("/api/jokes", (req, res) => {
   const jokes = [
     {
       id: 1,
@@ -21,6 +18,9 @@ app.get("/jokes", (req, res) => {
       title: "Scarecrow Award"
     },
     { id: 3,
+      joke: "What do you call fake spaghetti? An impasta!" ,
+      title: "Fake Pasta"},
+    { id: 4,
       joke: "What do you call fake spaghetti? An impasta!" ,
       title: "Fake Pasta"}
   ];
