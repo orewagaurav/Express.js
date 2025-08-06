@@ -11,6 +11,7 @@ const subTodoSchema = new mongoose.Schema(
         },
         createdBy:{
             type:mongoose.Schema.Types.ObjectId,
+            ref:"User"
         }
 },{timestamps:true})
 export const SubTodo = mongoose.model("SubTodo",subTodoSchema)
